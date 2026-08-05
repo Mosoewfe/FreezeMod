@@ -18,7 +18,12 @@ elements.freeze = {
 }
 
 elements.superHeat ={
-    
+    color: ["#ff0000", "#ff7979"],
+	tool: function(pixel) {
+		pixel.temp += 10000;
+		pixelTempCheck(pixel);
+	},
+	category: "tools"
 }
 
 elements.setTemp = {
