@@ -11,7 +11,7 @@ async function _amyfunction(message, defaultValue = "") {
 elements.freeze = {
     color: ["#00008B", "#ADD8E6"],
     tool: function (pixel) {
-        pixel.temp -= 1200;
+        pixel.temp -= 1e+5;
         pixelTempCheck(pixel);
     },
     category: "tools"
